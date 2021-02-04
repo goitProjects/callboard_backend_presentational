@@ -112,3 +112,10 @@ export const getCreators = async (req: Request, res: Response) => {
     },
   ]);
 };
+
+export const setDefaultAvatar = async (req: Request, res: Response) => {
+  const user = req.user;
+  (user as IUser).avatarUrl = "https://i.ibb.co/K7j3rZk/99-512.png";
+  await user?.save();
+  return res.status(200).end();
+};

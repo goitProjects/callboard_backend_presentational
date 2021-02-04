@@ -36,7 +36,7 @@ const postCallSchema = Joi.object({
       Categories.TRANSPORT,
       Categories.WORK
     ),
-  price: Joi.number().required().min(0),
+  price: Joi.required(),
 });
 
 const callIdSchema = Joi.object({

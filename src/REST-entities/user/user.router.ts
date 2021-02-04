@@ -8,6 +8,7 @@ import {
   getAllInfoById,
   uploadAvatar,
   getCreators,
+  setDefaultAvatar,
 } from "./user.controller";
 import validate from "../../helpers/function-helpers/validate";
 import { multerMid } from "../../helpers/function-helpers/multer-config";
@@ -40,6 +41,11 @@ router.patch(
   multerMid.single("file"),
   tryCatchWrapper(authorize),
   tryCatchWrapper(uploadAvatar)
+);
+router.patch(
+  "/default-avatar",
+  tryCatchWrapper(authorize),
+  tryCatchWrapper(setDefaultAvatar)
 );
 
 export default router;

@@ -21,11 +21,7 @@ export const postCall = async (req: Request, res: Response) => {
   if (!req.files.length) {
     return res.status(400).send({ message: "No images provided" });
   }
-  if (
-    (callObj.category === Categories.FREE ||
-      callObj.category === Categories.TRADE) &&
-    Number(callObj.price) !== 0
-  ) {
+  if (callObj.category === Categories.FREE && Number(callObj.price) !== 0) {
     return res.status(400).send({
       message: `Can't set price for ${callObj.category} category. Must be 0`,
     });

@@ -9,8 +9,8 @@ export enum Categories {
   TRANSPORT = "transport",
   WORK = "work",
   ELECTRONICS = "electronics",
-  BUSINESS_AND_SERVICES = "business and services",
-  RECREATION_AND_SPORT = "recreation and sport",
+  BUSINESS_AND_SERVICES = "businessAndServices",
+  RECREATION_AND_SPORT = "recreationAndSport",
   FREE = "free",
   TRADE = "trade",
 }

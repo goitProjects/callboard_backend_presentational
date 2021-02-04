@@ -26,7 +26,7 @@ export const register = async (req: Request, res: Response) => {
     phone,
     firstName,
     secondName,
-    avatar: "",
+    avatarUrl: "https://i.ibb.co/K7j3rZk/99-512.png",
     favourites: [],
     calls: [],
   });
