@@ -17,6 +17,7 @@ import {
   getCategories,
   getCategory,
   getAds,
+  serviceFindCall,
 } from "./call.controller";
 import { multerMid } from "../../helpers/function-helpers/multer-config";
 import { Categories } from "../../helpers/typescript-helpers/enums";
@@ -82,12 +83,18 @@ router.delete(
   validate(callIdSchema, "params"),
   tryCatchWrapper(removeFromFavourites)
 );
-router.delete(
-  "/:callId",
-  tryCatchWrapper(authorize),
-  validate(callIdSchema, "params"),
-  tryCatchWrapper(deleteCall)
-);
+router
+  .route("/:callId")
+  .delete(
+    tryCatchWrapper(authorize),
+    validate(callIdSchema, "params"),
+    tryCatchWrapper(deleteCall)
+  )
+  .get(
+    tryCatchWrapper(authorize),
+    validate(callIdSchema, "params"),
+    tryCatchWrapper(serviceFindCall)
+  );
 router.get("/", validate(getCallsSchema, "query"), tryCatchWrapper(loadPages));
 router.get("/own", tryCatchWrapper(authorize), tryCatchWrapper(getCalls));
 router.get(

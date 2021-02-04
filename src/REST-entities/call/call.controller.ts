@@ -213,3 +213,11 @@ export const getCategory = async (req: Request, res: Response) => {
 export const getAds = async (req: Request, res: Response) => {
   res.status(200).send(ads);
 };
+
+export const serviceFindCall = async (req: Request, res: Response) => {
+  const call = await CallModel.findById(req.params.callId);
+  if (!call) {
+    return res.status(200).send({ success: false });
+  }
+  return res.status(200).send({ success: true });
+};
