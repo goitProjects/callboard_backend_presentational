@@ -198,6 +198,18 @@ export const getCategory = async (req: Request, res: Response) => {
   let { category } = req.params;
   let calls: ICall[];
   calls = await CallModel.find({ category });
+  if (category === "businessAndServices") {
+    const additionalCalls = await CallModel.find({
+      category: "business and services",
+    }).lean();
+    calls = [...calls, ...additionalCalls];
+  }
+  if (category === "recreationAndSport") {
+    const additionalCalls = await CallModel.find({
+      category: "recreation and sport",
+    }).lean();
+    calls = [...calls, ...additionalCalls];
+  }
   if (!calls.length) {
     return res.status(404).send({ message: "No calls found" });
   }
