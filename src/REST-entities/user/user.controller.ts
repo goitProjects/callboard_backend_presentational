@@ -48,65 +48,65 @@ export const uploadAvatar = async (req: Request, res: Response) => {
 export const getCreators = async (req: Request, res: Response) => {
   return res.status(200).send([
     {
-      firstName: "Даня",
-      secondName: "Цвиркун",
-      tasks: "Team Lead | Header",
+      firstName: "Daniel",
+      secondName: "Tsvirkun",
+      tasks: "Team Lead",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/cb3029e9-8667-480a-8646-4eadaa9bdeb6.jpg",
     },
     {
-      firstName: "Андрей",
-      secondName: "Осколок",
-      tasks: "Форма входа, наша команда и юзер бэк",
+      firstName: "Andrew",
+      secondName: "Oscolok",
+      tasks: "Sign in/up form, 'our team' and user's backend configuration",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/4d4e8cc1-db9e-4713-b8e7-f559693969e4.jpg",
     },
     {
       firstName: "Iryna",
       secondName: "Lunova",
-      tasks: "Карточка объявления и наполнение базы",
+      tasks: "Advertisement modal and database filling",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/5ce409e6-def8-4151-9e1f-3fafcec56410.jpg",
     },
     {
       firstName: "Andrii",
       secondName: "Kochmaruk",
-      tasks: "Мой кабинет",
+      tasks: "My cabinet",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/2538fc90-8959-4a56-8865-9dde68b8c537.jpg",
     },
     {
-      firstName: "Игорь",
-      secondName: "Серов",
-      tasks: "Подключение модулей к бэку объявлений",
+      firstName: "Igor",
+      secondName: "Serov",
+      tasks: "Writing of advertisement request modules",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/d4996f0a-274f-459d-ab3a-fe0306fb4b50.jpg",
     },
     {
       firstName: "Oleksandr",
       secondName: "Tril",
-      tasks: "Бэкенд объявлений",
+      tasks: "Database architecture",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/9d2f4b2a-e803-4fc4-ba6e-b10f0ce55d14.png",
     },
     {
-      firstName: "Андрій",
-      secondName: "Кулик",
-      tasks: "Реклама и слайдеры категорий",
+      firstName: "Andrii",
+      secondName: "Kyluk",
+      tasks: "Advertisement block and sliders",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/2c94ba5c-6c13-4aa0-8e05-86eba65daa47.jpg",
     },
     {
-      firstName: "Юрій",
-      secondName: "Дубенюк",
-      tasks: "Футер и модальное окно",
+      firstName: "Yurii",
+      secondName: "Dubenyuk",
+      tasks: "Footer and modal window",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/1dd94074-cb6e-49c6-9a33-4c4345e6756c.jpg",
     },
     {
       firstName: "Ivan",
       secondName: "Shtypula",
-      tasks: "Форма создания объявлений",
+      tasks: "Advertisement creation form",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/c6705931-a616-4695-9fdf-17c6e9f6b936.jpg",
     },
