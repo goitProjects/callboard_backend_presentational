@@ -50,14 +50,14 @@ export const getCreators = async (req: Request, res: Response) => {
     {
       firstName: "Даня",
       secondName: "Цвиркун",
-      tasks: "Team Lead | Header",
+      tasks: "Team Lead",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/cb3029e9-8667-480a-8646-4eadaa9bdeb6.jpg",
     },
     {
       firstName: "Андрей",
       secondName: "Осколок",
-      tasks: "Форма входа, наша команда и юзер бэк",
+      tasks: "Форма входа, наша команда и модули юзер-бэка",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/4d4e8cc1-db9e-4713-b8e7-f559693969e4.jpg",
     },
@@ -85,7 +85,7 @@ export const getCreators = async (req: Request, res: Response) => {
     {
       firstName: "Oleksandr",
       secondName: "Tril",
-      tasks: "Бэкенд объявлений",
+      tasks: "Архитектура БД",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/9d2f4b2a-e803-4fc4-ba6e-b10f0ce55d14.png",
     },
