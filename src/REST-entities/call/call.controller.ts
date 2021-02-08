@@ -13,10 +13,10 @@ export const postCall = async (req: Request, res: Response) => {
   if (req.fileValidationError) {
     return res.status(415).send({ message: req.fileValidationError });
   }
-  if (req.files.length > 5) {
+  if (req.files.length > 6) {
     return res
       .status(400)
-      .send({ message: "Only 5 and less images are allowed" });
+      .send({ message: "Only 6 and less images are allowed" });
   }
   if (!req.files.length) {
     return res.status(400).send({ message: "No images provided" });
