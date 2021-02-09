@@ -50,7 +50,7 @@ export const getCreators = async (req: Request, res: Response) => {
     {
       firstName: "Daniel",
       secondName: "Tsvirkun",
-      tasks: "Team Lead",
+      tasks: "Team Lead | Header",
       avatar:
         "https://storage.googleapis.com/kidslikev2_bucket/cb3029e9-8667-480a-8646-4eadaa9bdeb6.jpg",
     },
