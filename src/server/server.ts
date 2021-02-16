@@ -2,7 +2,7 @@ import cors from "cors";
 import path from "path";
 import express, { Application, Request, Response, NextFunction } from "express";
 import mongoose from "mongoose";
-require("dotenv").config({ path: path.join(__dirname, "../../.env") });
+require("dotenv").config({ path: path.join(__dirname, "../../.env") })
 import authRouter from "../auth/auth.router";
 import callRouter from "../REST-entities/call/call.router";
 import userRouter from "../REST-entities/user/user.router";
