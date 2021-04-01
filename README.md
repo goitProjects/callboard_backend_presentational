@@ -1,2 +1,3 @@
-# callboard_backend_presentational
-Project callboard backend_presentational
+# OLX presentational Backend
+
+Бэкенд, созданный сугубо под презентационный frontend OLX: https://callboard.goit.global/
