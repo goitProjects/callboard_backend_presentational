@@ -50,6 +50,7 @@ node("nodejs"){
 
         if (success) {
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                sh "mkdir /root/slave_jenkins/workspace/Build-Callboard-En-Backend/src/gcp-config"
                 sh '''cp /root/keys/index.ts /root/slave_jenkins/workspace/Build-Callboard-En-Backend/src/gcp-config/index.ts'''
                 sh "cp /root/keys/keys.json /root/slave_jenkins/workspace/Build-Callboard-En-Backend/src/gcp-config/keys.json"
                 sh "cp /root/keys/callboard-en/.env /root/slave_jenkins/workspace/Build-Callboard-En-Backend/.env"
