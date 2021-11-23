@@ -41,7 +41,7 @@ node("nodejs"){
     
     stage('Clone Git Repo') {
         catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-            git branch: 'en', credentialsId: 'github-goitProjects', url: 'git@github.com:goitProjects/callboard_backend_presentational.git'
+            git branch: 'pl', credentialsId: 'github-goitProjects', url: 'git@github.com:goitProjects/callboard_backend_presentational.git'
         }
     }
     
